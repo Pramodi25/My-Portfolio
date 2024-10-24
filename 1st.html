@@ -28,8 +28,8 @@
         <div class="wrapper">
             <div class="cols cols0">
                 <span class="topline">Hello</span>
-                <h1>I'm <span class="multiText">Coder</span></h1>
-                <p>Frontend Developer dgfiahgigndjogdh .znlhf,vdkjalnf;alalvnl jbgkbgblabjlgja</p>
+                <h1>I'm <span class="multiText"></span></h1>
+                <p>Web Developer Full-Stack Developer UI/UX Designer </p>
                 <div class="btns">
                     <button>Download CV</button>
                     <button>Hire Me</button>
@@ -38,10 +38,21 @@
             <div class="cols cols1">
                 <div class="imgbox">
                     <img src="" id="splash"> 
-                    <img src="mine.png">
+                    <img src="mine2.png">
                 </div>
             </div>  
         </div>
     </div>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typingEffect = new Typed(".multiText",{
+            strings: ["Coder","Web Developer", "Full-Stack Developer", "UI/UX Designer"],
+            loop: true,
+            typeSpeed: 100,
+            backSpeed: 80,
+            backDelay: 1500
+        })
+    </script>
 </body>
 </html>
