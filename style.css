@@ -220,3 +220,75 @@ button:hover{
         
     }
 }
+
+@keyframes animateUser {
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+/* Media Queries for Responsiveness */
+
+@media (max-width: 768px) {
+    .logo {
+        font-size: 28px;
+    }
+    
+    .navItem li a {
+        font-size: 18px;
+    }
+    
+    .wrapper {
+        flex-direction: column;
+    }
+    
+    .cols {
+        flex: 1 1 100%;
+    }
+    
+    h1 {
+        font-size: 2em;
+    }
+
+    .topline {
+        font-size: 1.8em;
+    }
+
+    .btns {
+        flex-direction: column;
+    }
+    
+    .imgbox img {
+        width: 60%;
+    }
+}
+
+@media (max-width: 480px) {
+    .navItem, .links {
+        display: none;
+    }
+    
+    .logo {
+        font-size: 24px;
+    }
+    
+    .wrapper {
+        padding: 3%;
+    }
+
+    h1 {
+        font-size: 1.5em;
+    }
+
+    p {
+        font-size: 1em;
+    }
+
+    button {
+        font-size: 18px;
+    }
+
+    .imgbox img {
+        width: 100%;
+    }
+}
