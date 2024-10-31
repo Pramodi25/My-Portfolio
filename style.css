@@ -6,12 +6,6 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
-:root{
-    --primary: #6f45e5;
-    --light: #fff;
-    --dark: #00172d;
-    --rgba: rgbs(0,0,0,0.2)
-}
 body{
     overflow: hidden;
 }
@@ -210,7 +204,7 @@ button:hover{
     position: relative;
     width: 59%;
     height: auto;
-    top:-100px;
+    top:-50px;
     right: -150px;
     padding-top: 100px;
     animation: animateUser 4s linear infinite;
@@ -333,4 +327,106 @@ button:hover{
         text-align: center;
     }
     
+}
+/*style about section*/
+.page{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+
+}
+.details h2{
+    position: relative;
+    font-size: 3vw;
+    font-weight: 500;
+    color: var(--dark);
+    text-align: center;
+    padding-top: 80px;
+}
+h2 .heading span{
+    color: var(--primary);
+    font-weight: 700; 
+}
+
+.underLine{
+    width: 100px;
+    height: 20px;
+    color: #7f00ff;
+}
+.userdetails{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1.8fr;
+    padding: 80px;
+}
+.details{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.details .aboutimgbox{
+    position: relative;
+    margin-top: 50px;
+    width: 20vw;
+    height: 20vw;
+    background-color: black;
+    border-radius: 50%;
+}
+
+.details .aboutimgbox img{
+    position: relative;
+    width: inherit;
+    height: inherit;
+    object-fit: cover;
+    border-radius: 50%;
+    /* margin-top: 20px; */
+    object-fit: cover;
+}
+.details .aboutimgbox::before{
+    position: absolute;
+    content: '';
+    width: inherit;
+    height: inherit;
+    border-radius: 50%;
+    z-index: 9999;
+    scale:1.08;
+    background: linear-gradient(to top left, var(--primary) 50%, #000 50%);
+    border: 5px solid var(--primary);
+}
+.details h1{
+    color: #7f00ff;
+    font-size: 2.5vw;
+    margin: 2vw;
+}
+.details .heading span{
+    color: #7f00ff;
+   
+}
+.details h5{
+    position: relative;
+    color: var(--dark);
+    font-size: 1.3vw;
+    font-weight: 500;
+}
+.socialmedia{
+    position: relative;
+    top: 50px; 
+}
+
+.scoialmedia i{
+    font-size: 2vw;
+    height: 50px;
+    width: 50px;
+    line-height: 50px;
+    background: #fff;
+    text-align: center;
+    margin: 0 10px;
+    display: inline-block;
+    transform: 0.2s ease;
+}
+
+.scoialmedia i:hover{
+    background: #7f00ff;
+    color: #fff;
+    border-radius: 50%;
 }
