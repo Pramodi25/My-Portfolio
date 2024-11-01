@@ -553,3 +553,100 @@ h2 .heading span{
     font-size: 1.2vw;
 }
 
+/*style contact section*/
+.contactPage .cont{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.contactinfo{
+    width: 40vw;
+    margin-top: -20vw;
+}
+.contactinfo h1{
+    color: var(--dark);
+    font-size: 2.5vw;
+    letter-spacing: 1vw;
+    text-transform: capitalize;
+}
+.contactinfo .textinfo{
+    position: relative;
+    display: flex;
+    margin-left: 3vw;
+    font-size: 1.2vw;
+    font-weight: 300;
+    margin-top: 3.5vw;
+    color: var(--dark);
+    height: 1vw;
+    line-height: 1.5vw;
+}
+.contactinfo .textinfo::after{
+    position: absolute;
+    display: block;
+    content: '';
+    background: var(--primary);
+    height: 3px;
+    width: 4vw;
+    left:4vw;
+    bottom: -2vws;
+}
+.contactinfo .textinfo:last-child::after{
+    display: none;
+}
+.contactinfo .textinfo i{
+    color: #7f00ff;
+    padding: 0 1vw;
+    font-size: 1.5vw;
+}
+.form{
+    position: relative;
+    margin-top: -10vw;
+    z-index: 20;
+}
+.form form{
+    padding: 60px 0;
+}
+form .usernames{
+    display: flex;
+    gap: 20px;
+}
+
+form .entrybox{
+    width: 100%;
+}
+.entrybox input,
+.entrybox textarea,
+.submit{
+    width: 100%;
+    margin: 10px 0;
+    outline: none;
+    font-size: 1.2vw;
+    padding: 25px;
+    border: none;
+    border-radius: 15px;
+    resize: vertical;
+    background: #d1cfcf;
+    color: #222;
+}
+
+.submit{
+    position: relative;
+    background: #7f00ff;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+.submit i{
+    position: relative;
+    left: -20px;
+    opacity: 0;
+    transition: 0.2s 0.1s;
+}
+.submit:hover i{
+    opacity: 1;
+    left: 10px; 
+}
+.submit:hover{
+    letter-spacing: 2px;
+}
