@@ -699,7 +699,7 @@ form .entrybox{
 
 /*Footer*/
 .copyright{
-    position: absolute;
+    position: fixed;
     bottom: 0;
     width: 100%;
     color: #fff;
@@ -707,4 +707,5 @@ form .entrybox{
     text-align: center;
     font-size: 1vw;
     padding: 10px 0;
+    margin: ;
 }
