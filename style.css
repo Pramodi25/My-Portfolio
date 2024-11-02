@@ -6,10 +6,6 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
-body{
-    overflow: hidden;
-}
-
 /*style navgigation bar*/
 .container{
     position: relative;
@@ -560,6 +556,15 @@ h2 .heading span{
     align-items: center;
     justify-content: center;
 }
+.contactPage{
+    padding: 140px;
+    position: absolute;
+}
+.contheading{
+    margin-left: 700px;
+    margin-top: 10px;
+    position: absolute;
+}
 .contactinfo{
     width: 40vw;
     margin-top: -20vw;
@@ -617,7 +622,7 @@ form .entrybox{
 }
 .entrybox input,
 .entrybox textarea,
-.submit{
+.submitbtns{
     width: 100%;
     margin: 10px 0;
     outline: none;
@@ -629,7 +634,9 @@ form .entrybox{
     background: #d1cfcf;
     color: #222;
 }
-
+.submitbtns{
+    background: #767575;
+}
 .submit{
     position: relative;
     background: #7f00ff;
@@ -637,16 +644,67 @@ form .entrybox{
     cursor: pointer;
     transition: 0.5s ease;
 }
-.submit i{
+.submitbtns i{
     position: relative;
     left: -20px;
     opacity: 0;
-    transition: 0.2s 0.1s;
+    transition: 0.5s 0.4s;
 }
-.submit:hover i{
+.submitbtns:hover i{
     opacity: 1;
     left: 10px; 
 }
 .submit:hover{
     letter-spacing: 2px;
+}
+/* media quary for tablet */
+@media(max-width:821px){
+    .contheading{
+        margin-left: 500px;
+        margin-top: 100px;
+    }
+    .contactPage .cont{
+        padding: 100px;
+    }
+    .contactPage{
+        padding: 500px;
+    }
+    .contactinfo h1{
+        font-size: 2vw;
+    }
+    .contactinfo .textinfo{
+        font-size: 1.2vw;
+    }
+    .contactinfo .textinfo::after{
+        width: 3vw;
+    }
+    .contactinfo .textinfo i{
+        font-size: 1.5vw;
+    }
+    .form form{
+        padding: 40px 0;
+    }
+    .entrybox input,
+    .entrybox textarea,
+    .submitbtns{
+        font-size: 1.2vw;
+    }
+    .submit{
+        font-size: 1.5vw;
+    }
+    .submitbtns i{
+        font-size: 1.5vw;
+    }
+}
+
+/*Footer*/
+.copyright{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    color: #fff;
+    background: #d5b7f2;
+    text-align: center;
+    font-size: 1vw;
+    padding: 10px 0;
 }
