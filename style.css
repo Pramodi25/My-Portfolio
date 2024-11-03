@@ -468,15 +468,16 @@ h2 .heading span{
 }
 
 .project h1 {
-    font-size: 60px;
+    font-size: 3vw;
+    font-weight: 500;
     text-align: center;
-    color: rgb(94, 234, 212);
+    color: black;
     font-family: 'Poppins', sans-serif;
     margin-bottom: 40px;
 }
 
 .project h1 span {
-    color: white;
+    color: #7f00ff;
 }
 
 .container-project {
@@ -517,10 +518,10 @@ h2 .heading span{
 
 .field-project img {
     border-radius: 8px;
-    width: 30%;
-    min-height: 120px;
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
 }
-
 .field-text-project {
     width: 70%;
     margin-top: 3px;
@@ -567,7 +568,7 @@ h2 .heading span{
 }
 
 /* PROJECT MOBILE */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 600px){
     .container-project {
         width: 100%;
         gap: 24px;
@@ -575,6 +576,46 @@ h2 .heading span{
 
     .field-project {
         width: 90%;
+        padding: 12px 16px 24px 16px;
+    }
+
+    .field-project img {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .link-to-project {
+        flex-wrap: wrap;
+    }
+
+    .field-text-project {
+        width: 100%;
+        height: min-content;
+        margin-top: 0;
+    }
+
+    .field-text-project h3 {
+        line-height: 24px;
+        margin-bottom: 18px;
+    }
+
+    .technology-project {
+        position: static;
+        flex-wrap: wrap;
+        justify-content: end;
+        width: 100%;
+    }
+}
+/* media quary for tab project page for 820px*/
+@media only screen and (min-width: 820px) and (max-width: 1200px){
+    .container-project {
+        width: 100%;
+        gap: 24px;
+    }
+
+    .field-project {
+        width: 42%;
         padding: 12px 16px 24px 16px;
     }
 
