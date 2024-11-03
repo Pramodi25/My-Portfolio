@@ -462,82 +462,109 @@ h2 .heading span{
     display: none;
 }
 
-/*style blog section*/
-.hero {
-    margin-bottom: 4rem;
-    padding-top: 100px;
-    text-align: center;
+/* PROJECT DESKTOP */
+.project {
+    padding: 80px 0;
 }
 
-.dot {
-    color: #7f00ff;
+.project h1 {
+    font-size: 60px;
+    text-align: center;
+    color: rgb(94, 234, 212);
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 40px;
 }
 
-.subtitle p{
-    font-size: clamp(1rem, 2vw, 1.2rem);
-    color: #888;
-    max-width: 300px;
-    text-align: center;
-    justify-content: center;
+.project h1 span {
+    color: white;
 }
-.portfolio-grid {
+
+.container-project {
     width: 100%;
-    margin-top: 50px;
-    margin-left: 200px;
-}
-
-.portfolio-item {
-    width: 300px;
+    margin: 0 auto;
     display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-}
-.portfolio-image {
-    width: 450px;
-    height: 450px;
-    border-radius: 10px;
-    overflow: hidden;
-    transition: 0.3s;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
 }
 
-.portfolio-image p{
-    position: absolute;
-    top: 50%;
-    left: 40%;
-    padding-bottom: -1000px;
+.field-project {
+    width: 42%;
+    border-radius: 12px;
+    padding: 12px 40px 12px 12px;
+    background-color: rgb(16, 65, 62);
+    border: 1px solid rgb(94, 234, 212);
+    transition: transform .3s ease-in-out;
+    display: grid;
+    grid-auto-columns: 100%;
+    grid-auto-rows: max-content;
+    row-gap: 22px;
+    grid-template-areas: 
+    'main-project' 'technology-project';
+    transition: transform .3s;
 }
 
-.portfolio-image img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: transform 0.3s ease;
+.field-project:hover {
+    transform: translateY(-10px);
 }
 
-.portfolio-content {
-    padding: 1.5rem;
+.link-to-project {
+    grid-area: main-project;
+    display: flex;
+    gap: 16px;
 }
 
-.portfolio-content h2 {
-    font-size: 1.5rem;
-    margin: 0;
-    color: black;
+.field-project img {
+    border-radius: 8px;
+    width: 30%;
+    min-height: 120px;
 }
-@media (max-width: 768px) {
-    main {
-        padding: 1rem;
-    }
 
-    .portfolio-grid {
-        grid-template-columns: 1fr;
-    }
+.field-text-project {
+    width: 70%;
+    margin-top: 3px;
+}
 
-    .hero {
-        margin-bottom: 2rem;
-        padding: 1rem 0;
-    }
-} 
+.field-text-project h3 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    line-height: 20px;
+    margin-bottom: 10px;
+}
+
+.field-text-project h3 span {
+    color: rgb(94, 234, 212);
+}
+
+.description-project {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: justify;
+}
+
+.technology-project {
+    display: flex;
+    justify-content: end;
+    gap: 16px;
+    grid-area: technology-project;;
+}
+
+.technology-project a {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    text-decoration: none;
+    background-color: rgb(16, 65, 62);
+    border: 2px solid rgb(27, 137, 122);
+    color: rgb(94, 234, 212);
+    padding: 4px 12px;
+    border-radius: 16px;
+}
+
+.technology-project a:hover {
+    cursor: pointer;
+}
 
 /*style contact section*/
 .containerC {
