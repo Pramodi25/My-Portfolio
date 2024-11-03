@@ -59,7 +59,7 @@ b{
     margin: 0 15px;
 }
 
-.navItem li a{
+.navItem > li> a{
     font-size: 25px;
     color: #3d535f;
     letter-spacing: 3px;
@@ -480,6 +480,12 @@ h2 .heading span{
     color: #7f00ff;
 }
 
+article:first-of-type {
+    border-top: 3px solid #7f00ff;
+    padding-top: 70px;
+    margin-top: 0px;
+}
+
 .container-project {
     width: 100%;
     margin: 0 auto;
@@ -494,8 +500,8 @@ h2 .heading span{
     width: 42%;
     border-radius: 12px;
     padding: 12px 40px 12px 12px;
-    background-color: rgb(169, 173, 173);
-    border: 1px solid black;
+    background-color: rgb(237, 238, 238);
+    border: 1px solid #7f00ff;
     transition: transform .3s ease-in-out;
     display: grid;
     grid-auto-columns: 100%;
@@ -505,11 +511,16 @@ h2 .heading span{
     'main-project' 'technology-project';
     transition: transform .3s;
 }
+.field-project::before {
+    content: "📝";
+    font-size: 20px;
+    color: #7f00ff;
+    margin-right: 5px;
+}
 
 .field-project:hover {
     transform: translateY(-10px);
 }
-
 .link-to-project {
     grid-area: main-project;
     display: flex;
@@ -557,17 +568,16 @@ h2 .heading span{
     font-family: 'Roboto', sans-serif;
     font-size: 14px;
     text-decoration: none;
-    background-color: rgb(16, 65, 62);
-    border: 2px solid rgb(27, 137, 122);
-    color: rgb(94, 234, 212);
+    background-color: rgb(9, 9, 9);
+    border: 2px solid rgb(6, 6, 6);
+    color: rgb(255, 255, 255);
     padding: 4px 12px;
     border-radius: 16px;
 }
 
-.technology-project a:hover {
+a[target="_blank"] {
     cursor: pointer;
 }
-
 /* PROJECT MOBILE */
 @media only screen and (max-width: 600px){
     .container-project {
@@ -703,11 +713,21 @@ h2 .heading span{
     display: flex;
     flex-direction: column;
 }
+input:valid {
+    background-color: black;
+}
 
 .reveal .entrybox {
     margin-bottom: 20px;
 }
-
+input[type="email"] {
+    font-size: 16px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    color: #333;
+    background-color: #f9f9f9;
+}
 .reveal .entrybox input, .reveal .entrybox textarea {
     width: 100%;
     padding: 12px;
