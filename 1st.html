@@ -40,7 +40,7 @@
             </div>
             <div class="cols cols1">
                 <div class="imgbox"> 
-                    <img src="mine2.png">
+                    <img src="mine2.png" alt="profile">
                 </div>
             </div>  
         </div>
@@ -68,6 +68,17 @@
         menuIcon.addEventListener('click', () => {
             navItems.classList.toggle('show');
         });
+    </script>
+    <script>
+        function code(){
+            const navbar = document.querySelector(".dropdown")
+            navbar.style.transform = "translateY(0px)"
+        }
+
+        function cancel(){
+            const navbar = document.querySelector(".dropdown")
+            navbar.style.transform = "translateY(-500px)"
+        }
     </script>
 </body>
 </html>

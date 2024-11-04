@@ -396,7 +396,6 @@ h2 .heading span{
     height: inherit;
     object-fit: cover;
     border-radius: 50%;
-    /* margin-top: 20px; */
     object-fit: cover;
 }
 .details .aboutimgbox::before{
@@ -520,8 +519,6 @@ article:first-of-type {
     align-items: center;
     gap: 40px;
 }
-
-
 .field-project {
     width: 42%;
     border-radius: 12px;
@@ -750,7 +747,6 @@ a[target="_blank"] {
     background-color: #0d0d0d;
     border: 1px solid #dabaf0;
     border-radius: 8px;
-    /* max-width: 250px; */
 }
 
 .aside-widget h2 {
@@ -762,7 +758,6 @@ a[target="_blank"] {
 .listskill {
     list-style-type: none;
     padding: 0;
-    /* margin: 0; */
 }
 
 .listskill li {
@@ -864,7 +859,6 @@ input[type="email"] {
 
 /*Footer*/
 .copyright{
-    /* position: fixed; */
     bottom: 0;
     width: 100%;
     color: #fff;

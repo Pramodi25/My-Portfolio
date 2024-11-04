@@ -28,10 +28,10 @@
     <section class="About page" id="About">
         <div class="userdetails">
             <div class="details">
-                <div class="aboutimgbox" reveal>
+                <div class="aboutimgbox">
                     <img src="mine2.png" alt="user-profile" >
                 </div>
-                <h2 class="reveal">S.Pramodi Silva</h1>
+                <h2 class="reveal">S.Pramodi Silva</h2>
                 <h5 class="reveal">Specially: Web Developer</h5><br>
                 <aside class="scoialmedia">
                     <i class="uil uil-github"></i>
@@ -95,5 +95,16 @@
             <p> Copyright <i class="uil uil-copyright"></i> 2024 by S.Promodi Silva | All rights reserved</p>
         </div>
     </footer>
+    <script>
+        function code(){
+            const navbar = document.querySelector(".dropdown")
+            navbar.style.transform = "translateY(0px)"
+        }
+
+        function cancel(){
+            const navbar = document.querySelector(".dropdown")
+            navbar.style.transform = "translateY(-500px)"
+        }
+    </script>
 </body>
 </html>
