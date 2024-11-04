@@ -335,7 +335,22 @@ button:hover{
     background-color: black;
     margin: 0;
 }
-.details h2{
+.aside{
+    flex: 1;
+    background-color: #2d333b;
+    padding: 1rem;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-right: -160px;
+    width: 300px;
+}
+.skill-widget{
+    margin-right: 800px;
+    margin-top: 10px;
+    width: 300px;
+    border-color: #fff;
+}
+.details h2{    
     position: relative;
     font-size: 3vw;
     font-weight: 500;
