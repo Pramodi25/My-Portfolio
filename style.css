@@ -11,11 +11,13 @@ body{
 }
 /*style navgigation bar*/
 .container{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
     position: relative;
-    overflow: hidden;
     width: 100%;
     min-height: 100vh;
-    background-color: var(--light);
+    background-color: black;
 }
 
 nav {
@@ -28,7 +30,8 @@ nav {
     line-height: 80px;
     z-index: 111;
     transition: 0.3s ease;
-    background-color: white;
+    background-color: black;
+    box-shadow: #d5b7f2 0px 0px 10px;
 }
 
 .navItem {
@@ -42,7 +45,7 @@ nav {
     display: flex;
     font-size: 40px;
     font-weight: 800;
-    color: var(--primary);
+    color: white;
     letter-spacing: 3px;
     cursor: pointer;
     text-transform: uppercase;
@@ -61,7 +64,7 @@ b{
 
 .navItem > li> a{
     font-size: 25px;
-    color: #3d535f;
+    color: white;
     letter-spacing: 3px;
     text-decoration: none;
     text-transform: capitalize;
@@ -321,22 +324,25 @@ button:hover{
 }
 /*style about section*/
 .page{
-    height: 100vh;
-    width: 100%;
-    position: relative;
-
+    padding-top: 80px;
+    min-height: 100vh;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    margin: 0;
 }
 .details h2{
     position: relative;
     font-size: 3vw;
     font-weight: 500;
-    color: var(--dark);
+    color: white;
     text-align: center;
     padding-top: 80px;
     margin-top: -50px;
 }
 h2 .heading span{
-    color: var(--primary);
+    color: white;
     font-weight: 700; 
 }
 
@@ -355,6 +361,7 @@ h2 .heading span{
     display: flex;
     flex-direction: column;
     align-items: center;
+    color: white;
 }
 .details .aboutimgbox{
     position: relative;
@@ -396,13 +403,14 @@ h2 .heading span{
 }
 .details h5{
     position: relative;
-    color: var(--dark);
+    color: white;
     font-size: 1.3vw;
     font-weight: 500;
 }
 .socialmedia{
     position: relative;
     top: 50px; 
+    color: white;
 }
 
 .scoialmedia i{
@@ -410,7 +418,6 @@ h2 .heading span{
     height: 50px;
     width: 50px;
     line-height: 50px;
-    background: #fff;
     text-align: center;
     margin: 0 10px;
     display: inline-block;
@@ -419,7 +426,6 @@ h2 .heading span{
 
 .scoialmedia i:hover{
     background: #7f00ff;
-    color: #fff;
     border-radius: 50%;
 }
 .details p{
@@ -427,7 +433,7 @@ h2 .heading span{
     word-spacing: 2px;
     max-width: 60%;
     margin-top: 1vw;
-    color: black
+    color:white;
 }
 .timeline{
     margin-top: 60px;
@@ -465,13 +471,14 @@ h2 .heading span{
 /* PROJECT DESKTOP */
 .project {
     padding: 80px 0;
+    background-color: black;
 }
 
 .project h1 {
     font-size: 3vw;
     font-weight: 500;
     text-align: center;
-    color: black;
+    color: white;
     font-family: 'Poppins', sans-serif;
     margin-bottom: 40px;
 }
@@ -500,7 +507,7 @@ article:first-of-type {
     width: 42%;
     border-radius: 12px;
     padding: 12px 40px 12px 12px;
-    background-color: rgb(237, 238, 238);
+    background-color: whitesmoke;
     border: 1px solid #7f00ff;
     transition: transform .3s ease-in-out;
     display: grid;
@@ -536,6 +543,7 @@ article:first-of-type {
 .field-text-project {
     width: 70%;
     margin-top: 3px;
+    text-decoration: none;
 }
 
 .field-text-project h3 {
@@ -545,7 +553,6 @@ article:first-of-type {
     margin-bottom: 10px;
     color: black;
 }
-
 .field-text-project h3 span {
     color: black;
 }
@@ -561,13 +568,12 @@ article:first-of-type {
     display: flex;
     justify-content: end;
     gap: 16px;
-    grid-area: technology-project;;
+    grid-area: technology-project;
 }
 
 .technology-project a {
     font-family: 'Roboto', sans-serif;
     font-size: 14px;
-    text-decoration: none;
     background-color: rgb(9, 9, 9);
     border: 2px solid rgb(6, 6, 6);
     color: rgb(255, 255, 255);
@@ -661,8 +667,15 @@ a[target="_blank"] {
 /*style contact section*/
 .containerC {
     max-width: 1100px;
-    margin: auto;
     padding: 20px;
+    min-height: 100vh;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--light);
+    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
 
 }
 
@@ -787,7 +800,7 @@ input[type="email"] {
 
 /*Footer*/
 .copyright{
-    position: fixed;
+    /* position: fixed; */
     bottom: 0;
     width: 100%;
     color: #fff;
