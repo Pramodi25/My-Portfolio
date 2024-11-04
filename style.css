@@ -830,6 +830,14 @@ input[type="email"] {
     background-color: #7f00ff;
 }
 
+.entrybox input:valid {
+    border-color: #01ff3c; /* Green border for valid input */
+    /* Light green background for valid input */
+}
+.entrybox input:invalid {
+    border-color: #ff0000; /* Red border for invalid input */
+    /* Light red background for invalid input */
+}
 /* Responsive Design */
 @media (max-width: 900px) {
     .container .row {
